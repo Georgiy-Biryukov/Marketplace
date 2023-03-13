@@ -1,0 +1,63 @@
+.sortStrip {
+  display: flex;
+  justify-content: flex-end;
+  background: #ffffff;
+  border: 1px solid #dee2e7;
+  border-radius: 6px;
+  padding: 12px;
+
+  @media (max-width: 767px) {
+    margin: 0 -15px;
+    border: none;
+    padding: 10px 15px;
+  }
+
+  @media (max-width: 400px) {
+    justify-content: space-around;
+  }
+
+  .sortBtn__holder {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+
+    @media (max-width: 767px) {
+      gap: 4px;
+    }
+
+    .sortBtn {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      padding: 10px;
+      border: 1px solid #dee2e7;
+      border-radius: 6px;
+
+      span {
+        margin-right: 18px;
+        color: #1c1c1c;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        @media (max-width: 767px) {
+          font-size: 13px;
+          margin-right: 8px;
+          line-height: 15px;
+        }
+      }
+    }
+
+    .OpenMenuBtn {
+      display: none;
+      max-width: 28px;
+
+      @media (max-width: 767px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

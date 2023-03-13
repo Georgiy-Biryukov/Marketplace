@@ -1,0 +1,63 @@
+.price__filter {
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .form__row {
+    margin-bottom: 31px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      margin-bottom: 15px;
+      order: 1;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: #1c1c1c;
+    }
+
+    button {
+      display: none;
+
+      @media (max-width: 767px) {
+        display: block;
+      }
+
+      span {
+        color: #1677ff;
+      }
+    }
+  }
+
+  .form__price__inputs {
+    .inputs__wrapper {
+      display: flex;
+      gap: 8px;
+
+      @media (max-width: 767px) {
+        gap: 6px;
+      }
+
+      .numberInputLabel {
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #1c1c1c;
+        margin-bottom: 5px;
+      }
+
+      .numberInput {
+        width: 100%;
+        max-width: 110px;
+        padding: 5px 11px;
+      }
+    }
+  }
+}

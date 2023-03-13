@@ -1,0 +1,79 @@
+.form__checkboxes {
+  .checkboxGroup {
+    width: 100%;
+
+    .checkboxGroup__col {
+      width: 100%;
+
+      .form__row {
+        margin-bottom: 31px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 767px) {
+          margin-bottom: 15px;
+          order: 1;
+        }
+
+        span {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+          color: #1c1c1c;
+        }
+
+        button {
+          display: none;
+
+          @media (max-width: 767px) {
+            display: block;
+          }
+
+          span {
+            color: #1677ff;
+          }
+        }
+      }
+
+      .divider__top {
+        margin: 0 0 24px;
+
+        @media (max-width: 768px) {
+          margin: 0 0 14px;
+        }
+      }
+
+      .checkBox {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #1c1c1c;
+        margin-bottom: 17px;
+
+        @media (max-width: 768px) {
+          display: flex;
+          flex-direction: row-reverse;
+          width: 100%;
+        }
+
+        span:last-of-type {
+          width: 20px;
+          height: 20px;
+
+          @media (max-width: 768px) {
+            padding: 0;
+            margin-right: auto;
+          }
+        }
+      }
+
+      .divider__down {
+        margin: 24px 0 0;
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
